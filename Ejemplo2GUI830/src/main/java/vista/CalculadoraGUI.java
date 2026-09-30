@@ -29,28 +29,28 @@ public class CalculadoraGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField4 = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
         Nombre = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txtNota1 = new javax.swing.JTextField();
         notaDesarrollo = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtNota2 = new javax.swing.JTextField();
         notaMate = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblResultado = new javax.swing.JLabel();
         Evaluar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextField4.addActionListener(this::jTextField4ActionPerformed);
+        txtNombre.addActionListener(this::txtNombreActionPerformed);
 
         Nombre.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Nombre.setText("Nombre");
 
-        jTextField5.addActionListener(this::jTextField5ActionPerformed);
+        txtNota1.addActionListener(this::txtNota1ActionPerformed);
 
         notaDesarrollo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         notaDesarrollo.setText("Escriba la nota de desarrollo");
 
-        jTextField6.addActionListener(this::jTextField6ActionPerformed);
+        txtNota2.addActionListener(this::txtNota2ActionPerformed);
 
         notaMate.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         notaMate.setText("Escriba la nota de matematicas");
@@ -71,16 +71,16 @@ public class CalculadoraGUI extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(notaMate, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtNota2, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 78, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtNota1, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Evaluar)
                         .addGap(94, 94, 94))))
@@ -91,19 +91,19 @@ public class CalculadoraGUI extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(notaDesarrollo, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNota1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Evaluar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(notaMate)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtNota2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(93, Short.MAX_VALUE))
         );
 
@@ -121,20 +121,44 @@ public class CalculadoraGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void txtNota1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNota1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_txtNota1ActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_txtNombreActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void txtNota2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNota2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_txtNota2ActionPerformed
 
     private void EvaluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EvaluarActionPerformed
         // TODO add your handling code here:
+        try {
+        //Capturar los datos
+        String nombre = txtNombre.getText().trim().toLowerCase();
+        double nota1 = Double.parseDouble(txtNota1.getText());
+        double nota2 = Double.parseDouble(txtNota2.getText());
+     
+        //Instanciar el objeto
+        modelo.Estudiante estudiante = new modelo.Estudiante(nombre,nota1,nota2);
+        
+        //Pedirle al objeto que trabaje y actualice la interfaz
+        String mensaje =String.format("Estudiante %s| Definitiva: %.2f(%s)",
+                estudiante.getNombre(),
+                estudiante.calcularDefinitiva(),
+                estudiante.obtenerEstado());
+        lblResultado.setText(mensaje);
+        }
+        
+        catch(NumberFormatException e){
+            javax.swing.JOptionPane.showMessageDialog(this,
+                    "Por favor ingresa valores numericos validos",
+                    "Error de formato",
+                    javax.swing.JOptionPane.ERROR_MESSAGE);
+            
+        }
     }//GEN-LAST:event_EvaluarActionPerformed
 
     /**
@@ -165,12 +189,12 @@ public class CalculadoraGUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Evaluar;
     private javax.swing.JLabel Nombre;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JLabel lblResultado;
     private javax.swing.JLabel notaDesarrollo;
     private javax.swing.JLabel notaMate;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtNota1;
+    private javax.swing.JTextField txtNota2;
     // End of variables declaration//GEN-END:variables
 }
